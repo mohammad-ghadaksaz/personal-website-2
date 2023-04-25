@@ -1,0 +1,413 @@
+.backg {
+  background-color: rgb(216, 216, 216);
+  font-family: "Ysabeau", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.headtop {
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  background-color: rgb(236, 236, 236);
+  border-bottom: 1px solid red;
+}
+.headtop section {
+  height: 80px;
+}
+.headtop section h2 {
+  text-transform: capitalize;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: bolder;
+}
+.headtop section h2 strong {
+  color: rgb(190, 24, 24);
+}
+.headtop .menu {
+  height: 100%;
+}
+.headtop .menu > li {
+  height: 100%;
+  color: black;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.headtop .menu > li:hover > .sub {
+  opacity: 1;
+  visibility: visible;
+}
+.headtop .menu > li > .sub {
+  transition: 0.4s;
+  border-top: 1px solid gray;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 1px 3px 10px black;
+  left: 0;
+  width: 120%;
+  height: auto;
+  background-color: rgb(234, 234, 234);
+}
+.headtop .menu > li > .sub > li {
+  list-style-type: none;
+  height: 70px;
+  color: black;
+}
+.headtop .menu > li > .sub > li > a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.headtop .menu > li > .sub > li:nth-of-type(1):hover > a {
+  color: rgb(196, 65, 187);
+}
+.headtop .menu > li > .sub > li:nth-of-type(2):hover > a {
+  color: rgb(68, 140, 228);
+}
+.headtop .menu > li > .sub > li:nth-of-type(3):hover > a {
+  color: rgb(43, 98, 209);
+}
+.headtop .menu > li:nth-of-type(1):hover > a {
+  color: rgb(190, 24, 24);
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.512);
+}
+.headtop .menu > li:nth-of-type(2):hover > a {
+  color: rgb(255, 153, 0);
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.512);
+}
+.headtop .menu > li:nth-of-type(3):hover > a {
+  color: rgb(190, 24, 24);
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.512);
+}
+.headtop .menu > li:nth-of-type(4):hover > a {
+  color: rgb(190, 24, 24);
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.512);
+}
+.headtop .menu > li > a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.slide {
+  height: auto;
+  border-bottom: 1px solid #7c7c7c;
+}
+.slide figure {
+  height: 500px;
+}
+.slide figure img {
+  border-radius: 26px;
+}
+@media screen and (min-width: 993px) {
+  .slide figure img {
+    height: 70%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .slide figure img {
+    height: 90%;
+  }
+}
+.slide section {
+  padding-top: 60px;
+  height: 100%;
+}
+.slide section h3 {
+  height: 100px;
+}
+.slide section h2 {
+  height: 100px;
+}
+.slide section h2 > strong {
+  color: rgb(190, 24, 24);
+  font-weight: bolder;
+}
+.slide section h5 {
+  height: 100px;
+}
+.slide section h1 {
+  color: rgb(0, 0, 0);
+  font-size: 42px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 10px rgba(77, 77, 77, 0.558);
+  letter-spacing: 7px;
+  animation: typer 5s steps(30) infinite, blink 1s ease-in-out infinite;
+  border-right: 2px solid rgb(197, 45, 45);
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .slide section h1 {
+    font-size: 30px;
+    word-spacing: 1px;
+    letter-spacing: 5px;
+  }
+}
+
+.about {
+  margin-top: 50px;
+  border-bottom: 1px solid #7c7c7c;
+}
+.about .ax {
+  margin-top: 40px;
+  height: 300px;
+}
+.about .ax img {
+  height: 90%;
+  border-radius: 50%;
+}
+.about h3 {
+  height: 40px;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(190, 24, 24);
+  font-weight: bolder;
+}
+.about .abt {
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .about .abt h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .about .abt h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .about .abt h4 {
+    font-size: 20px;
+  }
+}
+.about .abt h4 span {
+  color: rgb(190, 24, 24);
+}
+.about .abt h4 a {
+  text-decoration: none;
+  color: black;
+}
+.about .skills {
+  margin-bottom: 20px;
+}
+.about .skills .box {
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+  transition: 0.4s;
+  height: 350px;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.611);
+}
+.about .skills .box:hover {
+  background-color: white;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+.about .skills .box:hover img {
+  scale: 1.2;
+  transform: translateY(12px);
+}
+.about .skills .box:nth-of-type(1)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 97%;
+  content: "";
+  height: 23px;
+  background-color: green;
+}
+.about .skills .box:nth-of-type(2)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 90%;
+  content: "";
+  height: 23px;
+  background-color: rgb(133, 212, 15);
+}
+.about .skills .box:nth-of-type(3)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 83%;
+  content: "";
+  height: 23px;
+  background-color: greenyellow;
+}
+.about .skills .box:nth-of-type(4)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 55%;
+  content: "";
+  height: 23px;
+  background-color: rgb(226, 253, 17);
+}
+.about .skills .box:nth-of-type(5)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.about .skills .box:nth-of-type(6)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.about .skills .box:nth-of-type(7)::after {
+  position: absolute;
+  left: 0;
+  bottom: 43%;
+  width: 100%;
+  content: "";
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.about .skills .box img {
+  transition: 0.4s;
+}
+.about .skills .box > h5 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.contact {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact h3 {
+  height: 40px;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(190, 24, 24);
+  font-weight: bolder;
+}
+.contact .ax {
+  margin-top: 30px;
+  height: 500px;
+}
+.contact .ax img {
+  height: 90%;
+  border-radius: 50%;
+}
+.contact .available {
+  font-weight: bold;
+  margin-left: 40px;
+  height: 300px;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.681);
+  justify-content: space-evenly;
+}
+.contact .available p {
+  font-size: 27px;
+  font-weight: bolder;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .contact .available h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .contact .available h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .contact .available h4 {
+    font-size: 20px;
+  }
+}
+.contact .available h4 > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(185, 51, 36);
+}
+.contact .second-cont {
+  margin-left: 40px;
+  background-color: rgba(0, 0, 0, 0.562);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.681);
+}
+.contact .second-cont h6 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.foot {
+  margin: 0;
+  margin-top: 100px;
+}
+.foot footer {
+  background-color: rgb(43, 44, 50);
+  color: white;
+  height: 60px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot footer:hover {
+  height: 120px;
+}
+.foot footer h4 {
+  font-size: 17px;
+}
+
+@keyframes typer {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 24ch;
+  }
+}
+@keyframes blink {
+  from {
+    border-right: 2px solid rgba(255, 20, 147, 0);
+  }
+  to {
+    border-right: 2px solid rgb(197, 45, 45);
+  }
+}/*# sourceMappingURL=master.css.map */
